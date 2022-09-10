@@ -10,13 +10,13 @@ const DEFAULT = {
     bgsize: "cover",
     cursor: "zoom-in",
     borderpixel: 1,
-    color: "#ddd",
+    color: "#8f8f8f",
     bordercolor: "#ddd",
-    url: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661524006/icons/merowallpaper_dg3kzr.png"
+    imagesrc: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662844267/icons/github/Screenshot_63_ll09rf.png"
 };
 export const Zoom = (props) => {
     var _a;
-    const { className, height, borderpixel, color, bordercolor, maxwidth, width, repeat, position, size, bgsize, cursor, url } = useMemo(() => (Object.assign(Object.assign({}, DEFAULT), props)), [props]);
+    const { className, height, borderpixel, color, bordercolor, maxwidth, width, repeat, position, size, bgsize, cursor, imagesrc } = useMemo(() => (Object.assign(Object.assign({}, DEFAULT), props)), [props]);
     const customstlyes = (_a = props.style) !== null && _a !== void 0 ? _a : null;
     const divref = useRef();
     const [isHovering, setIsHovering] = useState(false);
@@ -38,7 +38,7 @@ export const Zoom = (props) => {
         handleMouseLeave();
     };
     const styles = {
-        backgroundImage: `url(${url})`,
+        backgroundImage: `imagesrc(${imagesrc})`,
         height: `${height}px`,
         maxWidth: `${maxwidth}px`,
         width: `${width}%`,
@@ -46,8 +46,8 @@ export const Zoom = (props) => {
         backgroundColor: `${color}`,
         cursor: `${cursor}`,
         backgroundPosition: isHovering ? `${pos}` : `${position}`,
-        backgroundSize: isHovering ? `${size}%` : `${bgsize}`,
-        border: `${borderpixel}px solid ${bordercolor}`
+        backgroundSize: isHovering ? `${maxwidth / 2 + size}%` : `${bgsize}`,
+        border: isHovering ? `${borderpixel}px solid ${bordercolor}` : ""
     };
     return React.createElement("div", { ref: divref, onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseOut, onMouseMove: handleMouseMove, className: className, style: Object.assign(Object.assign({}, styles), customstlyes) });
 };

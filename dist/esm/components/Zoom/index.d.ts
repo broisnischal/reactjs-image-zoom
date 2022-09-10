@@ -11,7 +11,7 @@ export interface CountProps {
     color?: string;
     bordercolor?: string;
     size?: number;
-    url?: string;
+    imagesrc?: string;
     borderpixel?: number;
     style?: CSSProperties;
 }
