@@ -13,7 +13,7 @@ export interface CountProps {
     color?: string;
     bordercolor?: string;
     size?: number;
-    url?: string;
+    imagesrc?: string;
     borderpixel?: number;
     style?: CSSProperties;
 }
@@ -28,13 +28,13 @@ const DEFAULT = {
     bgsize: "cover",
     cursor: "zoom-in",
     borderpixel: 1,
-    color: "#ddd",
+    color: "#8f8f8f",
     bordercolor: "#ddd",
-    url: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661524006/icons/merowallpaper_dg3kzr.png"
+    imagesrc: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662844267/icons/github/Screenshot_63_ll09rf.png"
 };
 
 export const Zoom: React.FC<CountProps> = (props) => {
-    const { className, height, borderpixel, color, bordercolor, maxwidth, width, repeat, position, size, bgsize, cursor, url } = useMemo(() => ({ ...DEFAULT, ...props }), [props]);
+    const { className, height, borderpixel, color, bordercolor, maxwidth, width, repeat, position, size, bgsize, cursor, imagesrc } = useMemo(() => ({ ...DEFAULT, ...props }), [props]);
 
     const customstlyes = props.style ?? null;
 
@@ -63,7 +63,7 @@ export const Zoom: React.FC<CountProps> = (props) => {
     };
 
     const styles = {
-        backgroundImage: `url(${url})`,
+        backgroundImage: `imagesrc(${imagesrc})`,
         height: `${height}px`,
         maxWidth: `${maxwidth}px`,
         width: `${width}%`,
@@ -71,8 +71,8 @@ export const Zoom: React.FC<CountProps> = (props) => {
         backgroundColor: `${color}`,
         cursor: `${cursor}`,
         backgroundPosition: isHovering ? `${pos}` : `${position}`,
-        backgroundSize: isHovering ? `${size}%` : `${bgsize}`,
-        border: `${borderpixel}px solid ${bordercolor}`
+        backgroundSize: isHovering ? `${maxwidth / 2 + size}%` : `${bgsize}`,
+        border: isHovering ? `${borderpixel}px solid ${bordercolor}` : ""
     };
 
     return <div ref={divref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseOut} onMouseMove={handleMouseMove} className={className} style={{ ...styles, ...customstlyes }} />;
