@@ -63,7 +63,7 @@ export const Zoom: React.FC<CountProps> = (props) => {
     };
 
     const styles = {
-        backgroundImage: `imagesrc(${imagesrc})`,
+        backgroundImage: `url(${imagesrc})`,
         height: `${height}px`,
         maxWidth: `${maxwidth}px`,
         width: `${width}%`,

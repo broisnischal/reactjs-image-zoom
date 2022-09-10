@@ -38,7 +38,7 @@ export const Zoom = (props) => {
         handleMouseLeave();
     };
     const styles = {
-        backgroundImage: `imagesrc(${imagesrc})`,
+        backgroundImage: `url(${imagesrc})`,
         height: `${height}px`,
         maxWidth: `${maxwidth}px`,
         width: `${width}%`,
