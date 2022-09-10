@@ -4,6 +4,12 @@
 [![Downloads](https://img.shields.io/npm/dw/reactjs-image-zoom?style=plastic)](http://www.npmtrends.com/reactjs-image-zoom)
 ![Badge gzip size](https://img.shields.io/bundlephobia/min/reactjs-image-zoom)
 
+### Preview :
+
+<p align="center">
+    <img width="300" src="https://res.cloudinary.com/dacp0r5b7/image/upload/v1662852052/icons/github/2022-09-11_04-00-44_2_z0zvlk.gif" alt="Preview">
+</p>
+
 ## Getting Started
 
 ### **Installation**
