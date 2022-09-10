@@ -1,4 +1,4 @@
-# ReactJS Image Zoom
+# [ReactJS Image Zoom](https://www.npmjs.com/package/reactjs-image-zoom)
 
 [![GitHub license](https://img.shields.io/npm/l/reactjs-image-zoom.svg?style=plastic)]() [![Version](https://img.shields.io/npm/v/reactjs-image-zoom)](https://www.npmjs.com/package/reactjs-image-zoom)
 [![Downloads](https://img.shields.io/npm/dw/reactjs-image-zoom?style=plastic)](http://www.npmtrends.com/reactjs-image-zoom)
@@ -6,9 +6,7 @@
 
 ### Preview :
 
-<p align="center">
-    <img width="300" src="https://res.cloudinary.com/dacp0r5b7/image/upload/v1662852052/icons/github/2022-09-11_04-00-44_2_z0zvlk.gif" alt="Preview">
-</p>
+![Preview of uses](https://res.cloudinary.com/dacp0r5b7/image/upload/v1662852052/icons/github/2022-09-11_04-00-44_2_z0zvlk.gif)
 
 ## Getting Started
 
