@@ -6,7 +6,7 @@
 
 ### Preview :
 
-![Preview of uses](https://res.cloudinary.com/dacp0r5b7/image/upload/v1662852052/icons/github/2022-09-11_04-00-44_2_z0zvlk.gif)
+![Preview](https://res.cloudinary.com/dacp0r5b7/image/upload/v1662852808/icons/github/2022-09-11_04-00-44_2_lvttwg.gif)
 
 ## Getting Started
 
