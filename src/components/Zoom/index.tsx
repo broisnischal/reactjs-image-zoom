@@ -10,7 +10,6 @@ export interface CountProps {
     position?: string;
     bgsize?: string;
     cursor?: string;
-    color?: string;
     bordercolor?: string;
     size?: number;
     imagesrc?: string;
@@ -28,13 +27,12 @@ const DEFAULT = {
     bgsize: "cover",
     cursor: "zoom-in",
     borderpixel: 1,
-    color: "#8f8f8f",
     bordercolor: "#ddd",
     imagesrc: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662844267/icons/github/Screenshot_63_ll09rf.png"
 };
 
 export const Zoom: React.FC<CountProps> = (props) => {
-    const { className, height, borderpixel, color, bordercolor, maxwidth, width, repeat, position, size, bgsize, cursor, imagesrc } = useMemo(() => ({ ...DEFAULT, ...props }), [props]);
+    const { className, height, borderpixel, bordercolor, maxwidth, width, repeat, position, size, bgsize, cursor, imagesrc } = useMemo(() => ({ ...DEFAULT, ...props }), [props]);
 
     const customstlyes = props.style ?? null;
 
@@ -68,10 +66,9 @@ export const Zoom: React.FC<CountProps> = (props) => {
         maxWidth: `${maxwidth}px`,
         width: `${width}%`,
         backgroundRepeat: `${repeat}`,
-        backgroundColor: `${color}`,
         cursor: `${cursor}`,
         backgroundPosition: isHovering ? `${pos}` : `${position}`,
-        backgroundSize: isHovering ? `${maxwidth / 2 + size}%` : `${bgsize}`,
+        backgroundSize: isHovering ? `${size}%` : `${bgsize}`,
         border: isHovering ? `${borderpixel}px solid ${bordercolor}` : ""
     };
 

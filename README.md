@@ -44,6 +44,7 @@ function App() {
             repeat="repeat" // default is no-repeat
             position="center" // cover
             imagesrc={Image} // Image component | URL
+            size={200} // it is in percent
             bgsize="cover" // background-size
             cursor="zoom-in" // pointer
             borderpixel={2} // size of border
