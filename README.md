@@ -33,6 +33,7 @@ This will include default properties of the Component and renders.
 ```jsx
 // import "./App.css";
 import Zoom from "reactjs-image-zoom";
+import Image from "./assets/imgs/nws.png";
 
 function App() {
     return (
