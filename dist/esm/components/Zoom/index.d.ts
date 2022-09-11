@@ -8,7 +8,6 @@ export interface CountProps {
     position?: string;
     bgsize?: string;
     cursor?: string;
-    color?: string;
     bordercolor?: string;
     size?: number;
     imagesrc?: string;
