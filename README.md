@@ -81,7 +81,7 @@ function App() {
 We've developed this component for easy implementation of multiple component images in react application as you have seen in different ecommerse website that they are using for viewing this product.
 
 To know more about the architecture or if you want to contribute with this component: [Contributing Documentation](https://github.com/neeswebservices/reactjs-image-zoom/graphs/contributors).
-
+The bug is fixing in next update. 
 ### License
 
 [MIT License](https://github.com/neeswebservices/reactjs-image-zoom/master/LICENSE.md) @ [neeswebservices](https://nischal-dahal.com.np/)
